@@ -1,0 +1,608 @@
+/* Style For Engine detail Graph */
+
+/* Utilitie Classes that whill implement All nodes Starts here */
+
+.graph-container{
+
+    zoom: 0.8 !important;
+}
+
+.zoomBtn{
+
+    border: 0 !important;
+    background-color: #fff !important;
+    cursor: pointer 
+    !important;
+    position: absolute;
+    right:30px;
+    bottom:91px;
+
+}
+.zoomOutBtn{
+
+  border: 0 !important;
+  background-color: #fff !important;
+  cursor: pointer 
+  !important;
+  position: absolute;
+  right:30px;
+  bottom: 38px;
+
+}
+
+@media screen and (min-width:2850px){
+
+  .zoomBtn{
+
+    bottom: 300px;
+  }
+
+  .zoomOutBtn{
+
+    bottom: 265px;
+  }
+
+}
+
+@media screen and (max-width:767px){
+  .zoomBtn{
+    right: 10px;
+    bottom:57px;
+  }
+  .zoomOutBtn{
+    right: 10px;
+    bottom: 19px;
+  }
+}
+
+
+
+.react-flow__node-default,
+.react-flow__node-input,
+.react-flow__node-output,
+.react-flow__node-group {
+  border: 0 !important;
+  padding: 0px !important;
+  width: auto !important;
+}
+
+.react-flow__node-default.selectable.selected,
+.react-flow__node-default.selectable:focus,
+.react-flow__node-default.selectable:focus-visible,
+.react-flow__node-input.selectable.selected,
+.react-flow__node-input.selectable:focus,
+.react-flow__node-input.selectable:focus-visible,
+.react-flow__node-output.selectable.selected,
+.react-flow__node-output.selectable:focus,
+.react-flow__node-output.selectable:focus-visible,
+.react-flow__node-group.selectable.selected,
+.react-flow__node-group.selectable:focus,
+.react-flow__node-group.selectable:focus-visible {
+  box-shadow: 0 0 0 0.5px transparent !important;
+}
+
+.react-flow__node-default.selectable:hover,
+.react-flow__node-input.selectable:hover,
+.react-flow__node-output.selectable:hover,
+.react-flow__node-group.selectable:hover {
+  box-shadow: 0 0 0 0.5px transparent !important;
+}
+
+.react-flow__handle {
+  background: transparent !important;
+  border: 0 !important;
+}
+
+.text_Gray {
+  color: #98a2b3 !important;
+}
+
+.text_red {
+  color: #f04438 !important;
+}
+
+/* Utilitie Classes that whill implement All nodes End here */
+
+/* Custom classes For First node */
+
+.first_node {
+  border-radius: 9.996px !important;
+  border: 1.249px solid var(--gray-200, #eaecf0) !important;
+  background: var(--White, #fff) !important;
+  box-shadow: 0px 1.24947px 2.49894px 0px rgba(16, 24, 40, 0.06),
+    0px 1.24947px 3.74841px 0px rgba(16, 24, 40, 0.1) !important;
+  flex-shrink: 0 !important;
+  color: #eaecf0 !important;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.drive_img {
+  margin-left: 10px;
+  position: relative;
+  top: -8px;
+}
+
+.saleforce_img {
+  margin-top: 10px;
+}
+
+.node_description {
+  color: #667085 !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 12.495px !important; /* 89.248% */
+  letter-spacing: 0.42px !important;
+  margin-bottom: 0px;
+}
+
+.bottom_box {
+  padding: 9.49px 12.495px !important;
+  border-radius: 10px !important;
+  background: #fcfcfd !important;
+  box-shadow: 0px 1.24947px 2.49894px 0px rgba(16, 24, 40, 0.06),
+    0px 1.24947px 3.74841px 0px rgba(16, 24, 40, 0.1) !important;
+  position: absolute;
+  width: 192px;
+  z-index: -1;
+  top: 113px;
+}
+
+/* End Here 
+
+
+/* Custom Classes For Second Node */
+
+.second_node {
+  border: 1.249px solid var(--gray-200, #eaecf0) !important;
+  background: var(--White, #fff) !important;
+  border-radius: 50%;
+  box-shadow: 0px 1.24947px 2.49894px 0px rgba(16, 24, 40, 0.06),
+    0px 1.24947px 3.74841px 0px rgba(16, 24, 40, 0.1) !important;
+    background-image: url('/image/language.png') !important;
+    background-position: center !important;
+  background-size: contain !important;
+  width: 159.932px;
+  height: 159.932px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.second_node p {
+  font-size: 20px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  margin-top: 70px !important;
+  line-height: 22.49px !important;
+  margin-top: 55px !important;
+  width: 50%;
+  margin: auto;
+}
+
+.chip_api {
+  width: 40px !important;
+  padding: 4px !important;
+  margin: auto !important;
+  position: relative !important;
+  top: 49px;
+  background: #fff !important;
+  border: 1px sold !important;
+  color: #2e90fa;
+  border: 1px solid #2e90fa !important;
+  border-radius: 40px !important;
+}
+
+.second_node span {
+  text-align: center !important;
+  font-size: 12.38px !important;
+  font-style: normal !important;
+  font-weight: 70 !important;
+  line-height: 18.571px !important; /* 150% */
+  letter-spacing: 1.238px !important;
+}
+
+/* Custom Classes for 3rd Node */
+
+.third_node {
+  border-radius: 9.996px !important;
+  border: 1.249px solid var(--gray-200, #eaecf0) !important;
+  background: var(--White, #fff) !important;
+  box-shadow: 0px 1.24947px 2.49894px 0px rgba(16, 24, 40, 0.06),
+    0px 1.24947px 3.74841px 0px rgba(16, 24, 40, 0.1) !important;
+  flex-shrink: 0 !important;
+  color: #eaecf0 !important;
+  /* padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 35px;
+  padding-bottom: 35px; */
+  padding: 15px;
+  width: 262.389px !important;
+  height: 224.905px !important;
+}
+
+.chip_notification {
+  width: 100px !important;
+  padding: 4px !important;
+  margin: auto !important;
+  position: absolute !important;
+  top: -10px;
+  right: -80px;
+  background: #fff !important;
+  color: #344054;
+  border: 1px solid #f04438 !important;
+  border-radius: 40px !important;
+  font-size: 14px;
+  font-weight: 700;
+  left: 107px;
+}
+
+.third_node h1 {
+  color: #344054 !important;
+  font-size: 19.992px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 29.987px !important; /* 150% */
+  margin-left: 5px !important;
+}
+
+.description_footer {
+  color: var(--gray-700, #344054);
+  font-size: 19.992px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29.987px; /* 150% */
+  margin: 0;
+  width: 100%;
+}
+
+/* Custom Classes for Fourth Node */
+
+.fourht_node {
+  border-radius: 8px !important;
+  border: 1px solid var(--error-200, #fecdca) !important;
+  background: var(--error-50, #fef3f2) !important;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05) !important;
+  height: 36px;
+  padding: 10px 16px;
+}
+
+.fourht_node span {
+  color: var(--gray-700, #344054) !important;
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 18px !important; /* 150% */
+  margin: 0;
+}
+
+/* Custom Classes For Fifth Node */
+
+.fifth_node {
+  border-radius: 8px !important;
+  border: 1px solid var(--error-200, #eff8ff) !important;
+  background: var(--error-50, #eff8ff) !important;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05) !important;
+  height: 36px;
+  padding: 10px 16px;
+}
+
+/* Custom Classes For Sixt node */
+
+.sixt_node {
+  border-radius: 59.975px;
+  /* border: 1.249px solid var(--gray-200, #475467); */
+  background: var(--gray-600, #F2F4F7);
+  box-shadow: 0px 1.2494714260101318px 2.4989428520202637px 0px #1018280F;  
+  height: 46px;
+  padding: 10px 16px;
+  width: 285px !important;
+}
+
+.sixt_node span {
+  color: #344054 !important;
+  font-size: 17.992px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 29.987px !important; /* 150% */
+}
+
+/* Custom Class for Noce 8th*/
+
+.access_span {
+  color: var(--gray-700, #344054);
+  text-align: center;
+  font-size: 17.493px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12.495px; /* 71.429% */
+}
+
+.heading_span {
+  color: var(--gray-600, #475467);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: left;
+  margin: 0;
+}
+
+.list_span {
+  color: var(--gray-600, #475467);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  margin: 0;
+}
+
+.Box_Dropdown {
+  padding: 11.49px 18.49px;
+  width: 217px;
+  border-radius: 10px;
+  background: #fcfcfd;
+  position: relative;
+  bottom: 11px;
+  z-index: -1;
+  box-shadow: 0px 1.24947px 2.49894px 0px rgba(16, 24, 40, 0.06),
+    0px 1.24947px 3.74841px 0px rgba(16, 24, 40, 0.1);
+}
+
+.List {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+}
+
+/* Custom Class for Tenth Node */
+
+.tenth_node {
+  border: 1.249px solid var(--gray-200, #eaecf0) !important;
+  background: var(--White, #fff) !important;
+  border-radius: 50%;
+  box-shadow: 0px 1.24947px 2.49894px 0px rgba(16, 24, 40, 0.06),
+    0px 1.24947px 3.74841px 0px rgba(16, 24, 40, 0.1) !important;
+  background-image: url('/image/language2.png') !important;
+  background-position: center !important;
+  background-size: contain !important;
+  width: 159.932px;
+  height: 159.932px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.tenth_node p {
+  font-size: 20px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  margin-top: 70px !important;
+  line-height: 22.49px !important;
+  margin-top: 55px !important;
+  width: 80%;
+  margin: auto;
+}
+
+/* Custom Classes For Second Graph */
+
+.Second_Grpah_First_Node {
+  border-radius: 59.975px;
+  background: var(--gray-600, #F2F4F7);
+  box-shadow: 0px 1.24947px 2.49894px 0px rgba(16, 24, 40, 0.06),
+    0px 1.24947px 3.74841px 0px rgba(16, 24, 40, 0.1);
+  height: 46px;
+  padding: 10px 39px;
+  width: 340px !important;
+  text-align: center;
+}
+
+.Second_Grpah_First_Node span {
+  color: #344054 !important;
+  font-size: 19.992px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 29.987px !important; /* 150% */
+}
+
+.seconf_graph_left_Box_Dropdown {
+  padding: 11.49px 18.49px !important;
+  width: 217px !important;
+  border-radius: 10px !important;
+  background: #fcfcfd !important;
+  position: absolute !important;
+  left: -147px;
+  top: 35px !important;
+  z-index: -1 !important;
+  box-shadow: 0px 1.24947px 2.49894px 0px rgba(16, 24, 40, 0.06),
+    0px 1.24947px 3.74841px 0px rgba(16, 24, 40, 0.1) !important;
+}
+
+.seconf_graph_right_Box_Dropdown {
+  padding: 11.49px 18.49px !important;
+  width: 217px !important;
+  border-radius: 10px !important;
+  background: #fcfcfd !important;
+  position: absolute;
+  top: 35px;
+  z-index: -1 !important;
+  box-shadow: 0px 1.24947px 2.49894px 0px rgba(16, 24, 40, 0.06),
+    0px 1.24947px 3.74841px 0px rgba(16, 24, 40, 0.1) !important;
+  right: -147px;
+}
+
+/* Custom Classes for 2nd Node of Second Graph */
+
+.Second_Grpah_second_Node {
+  display: inline-flex;
+  padding: 4.49px 29.49px;
+  justify-content: center;
+  align-items: center;
+  gap: 12.49px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 1.24947px 2.49894px 0px rgba(16, 24, 40, 0.06),
+    0px 1.24947px 3.74841px 0px rgba(16, 24, 40, 0.1);
+}
+
+.Second_Grpah_second_Node .description {
+  color: var(--gray-600, #475467);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 166.667% */
+}
+
+.child_node {
+  display: inline-flex;
+  padding: 4px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 60px;
+  border: 1px solid var(--gray-300, #d0d5dd);
+}
+
+.child_node p {
+  color: var(--gray-700, #344054);
+  font-size: 19.992px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29.987px; /* 150% */
+  margin: 0px;
+}
+
+.second_graph_third_node {
+  border-radius: 9.996px !important;
+  border: 1.249px solid var(--gray-200, #eaecf0) !important;
+  background: var(--White, #fff) !important;
+  box-shadow: 0px 1.24947px 2.49894px 0px rgba(16, 24, 40, 0.06),
+    0px 1.24947px 3.74841px 0px rgba(16, 24, 40, 0.1) !important;
+  flex-shrink: 0 !important;
+  color: #eaecf0 !important;
+  /* padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 35px;
+  padding-bottom: 35px; */
+  padding: 15px;
+  width: 398px !important;
+  height: 237px !important;
+}
+
+.second_graph_third_node h1 {
+  color: #344054 !important;
+  font-size: 19.992px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 29.987px !important; /* 150% */
+  margin-left: 5px !important;
+}
+
+.openChip {
+  color: #f04438 !important;
+  font-size: 10.68px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 9.517px !important; /* 89.112% */
+  letter-spacing: 0.32px !important;
+  display: flex !important;
+  width: 106px !important;
+  height: 27.303px !important;
+  padding: 2.379px 4.759px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 4.759px !important;
+  flex-shrink: 0 !important;
+  border-radius: 21.414px !important;
+  background: var(--error-50, #fef3f2) !important;
+  position: absolute;
+  bottom: -28px;
+}
+
+.openChip_small {
+  display: inline-flex;
+  padding: 6px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 5.926px;
+  border-radius: 26.667px;
+  background: var(--error-50, #fef3f2);
+  color: #f04438;
+  font-size: 10.6px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 11.852px; /* 111.81% */
+  letter-spacing: 0.318px;
+  position: absolute;
+  bottom: -20px;
+}
+
+.openChip_small_cuccess {
+  display: inline-flex;
+  padding: 6px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 5.926px;
+  border-radius: 26.667px;
+  background: var(--error-50, #ecfdf3);
+  color: #12b76a;
+  font-size: 10.6px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 11.852px; /* 111.81% */
+  letter-spacing: 0.318px;
+  position: absolute;
+  bottom: -20px;
+}
+
+
+.second_graph_thirteenth_node {
+  border-radius: 9.996px !important;
+  border: 1.249px solid var(--gray-200, #eaecf0) !important;
+  background: var(--White, #fff) !important;
+  box-shadow: 0px 1.24947px 2.49894px 0px rgba(16, 24, 40, 0.06),
+    0px 1.24947px 3.74841px 0px rgba(16, 24, 40, 0.1) !important;
+  flex-shrink: 0 !important;
+  color: #eaecf0 !important;
+  /* padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 35px;
+  padding-bottom: 35px; */
+  padding: 15px;
+  width: 474px !important;
+  height: 200px !important;
+}
+
+
+.second_graph_thirteenth_node h1 {
+  color: #344054 !important;
+  font-size: 19.992px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 29.987px !important; /* 150% */
+  margin-left: 5px !important;
+}
+
+
+.mynodes{
+  zoom: 0.8 !important;
+  width: 81% !important;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:1100px){
+  .mynodes {
+    zoom: 0.7 !important;
+    width: 92% !important;
+  }
+  .mynodes2{
+    zoom: 0.85 !important;
+  }
+}
+@media screen and (max-width:767px){
+  .mynodes {
+    zoom: 0.62 !important;
+    width: 100% !important;
+  }
+}
